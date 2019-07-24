@@ -63,3 +63,7 @@ button{
 .messages {
   font-size: 14px;
 }
+
+p span {
+  font-weight: 700;
+}

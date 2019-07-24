@@ -14,7 +14,7 @@ const forecast = (latitude, longitude, callback) => {
     } else {
       const currently = body.currently
       callback(undefined,
-        body.daily.data[0].summary + ` It is currently ${currently.temperature} degrees out in ${body.timezone}. There is a ${currently.precipProbability}% chance of rain.`)
+        body.daily.data[0].summary + ` It is currently ${currently.temperature} °C out in ${body.timezone}. The highest/lowest daily temperature is: ${body.daily.data[0].temperatureHigh}/${body.daily.data[0].temperatureLow} °C. There is a ${currently.precipProbability}% chance of rain. The wind speed is: ${body.daily.data[0].windSpeed} km/h`)
     }
   })
 }
