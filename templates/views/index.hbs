@@ -4,6 +4,7 @@
 <head>
   <title>Weather</title>
   <link rel="icon" href="/img/weather.png">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 
@@ -11,10 +12,17 @@
   <div class="main-content">
     {{>header}}
     <p class="intro">{{message}}</p>
-    <form>
-      <input placeholder="Location" type="text">
-      <button>Search</button>
-    </form>
+    <div class="useroptions">
+      <form>
+        <input placeholder="Location" type="text">
+        <button>Search</button>
+      </form>
+      <button id="locationbutton">Get Location
+        <i class="material-icons">
+          near_me
+        </i>
+      </button>
+    </div>
     <div class="messages">
       <p id="message-1"></p>
       <p id="message-2"></p>
